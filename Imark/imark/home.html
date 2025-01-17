@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - iMark</title>
+    <title>Banner Slider</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Reset styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+    
+        /* Header styles */
+        .header {
+            background-color: #f21818; /* Dark background for the header */
+            color: #fff; /* White text color */
+            padding: 15px 5; /* Padding for top and bottom */
+        }
+    
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; /* Add horizontal padding */
+        }
+    
+        .logo h1 {
+            font-size: 36px; /* Increase font size of the logo */
+            margin: 0;
+            font-weight: bold;
+        }
+
+        /* Navbar styles */
+.navbar {
+    background-color: #dcd6d6fb; /* Đổi màu nền thành đen */
+    margin-top: 20px; /* Dịch khung xuống một chút */
+    padding: 20px 5; /* Padding trên và dưới */
+}
+
+/* Menu toggle styles */
+.menu-toggle {
+    background-color: #181616; /* Màu nền đen */
+    color: 191616; /* Màu chữ trắng */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Menu items */
+.menu li a {
+    color: #191616; /* Giữ màu chữ mặc định */
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Chỉnh sửa màu chữ cho các mục menu cụ thể */
+.menu li a {
+    color: #191616; /* Giữ màu chữ mặc định */
+}
+
+/* Đổi màu chữ cho các mục menu cụ thể */
+.menu li:first-child a,  /* Danh mục sản phẩm */
+.menu li:nth-child(2) a, /* Tin tức iMark */
+.menu li:nth-child(3) a { /* Tư vấn mua hàng */
+    color: black; /* Đổi màu chữ thành đen */
+}
+
+
+
+     .search-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff; /* White background for search bar */
+            border-radius: 25px; /* Rounded corners */
+            padding: 10px 20px;
+            width: 300px; /* Fixed width for search bar */
+        }
+    
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px; /* Increase font size */
+            width: 80%;
+        }
+    
+        .search-bar button {
+            background-color: #ff6600; /* Button color */
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    
+        .search-bar button i {
+            font-size: 18px; /* Icon size */
+            color: white; /* Icon color */
+        }
+    
+        .header-actions {
+            display: flex;
+            align-items: center;
+        }
+    
+        .header-actions .cart,
+        .header-actions .member {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+    
+        .header-actions .cart i,
+        .header-actions .member i {
+            margin-right: 5px;
+        }
+    
+        /* Banner styles */
+        .banner {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+    
+        .banner-images {
+            display: flex;
+            width: 300%; /* 3 images, adjust if more */
+            height: 80%;
+            transition: transform 0.5s ease-in-out;
+        }
+    
+        .banner-images img {
+            width: 100vw; /* Full width for each image */
+            height: 100%; /* Full height for each image */
+            object-fit: cover; /* Maintain aspect ratio and fill area */
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <h1>iMark</h1>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <div class="delivery">
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <div>
+                            <p><strong>Giao hàng</strong></p>
+                        </div>
+                    </div>
+                    <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Giỏ hàng (0)</a>
+                    <a href="login.html" class="member"><i class="fas fa-user"></i> Hội viên</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i> Danh mục sản phẩm
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Rau Củ Quả</a></li>
+                        <li><a href="#">Thực Phẩm Tươi Sống</a></li>
+                    </ul>
+                </div>
+                <ul class="menu">
+                    <li><a href="#"><i class="fas fa-envelope"></i> Tin tức iMark</a></li>
+                    <li><a href="#"><i class="fas fa-headphones"></i> Tư vấn mua hàng</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div class="banner">
+            <div class="banner-images">
+                <img src="assets/images/17011617926565ab40ca20e.png" alt="Image 1">
+                <img src="assets/images/tu-06-8-31-8-2022-mua-thit-ca-rau-cu-qua-giam-den-30-202208131037051141.jpg" alt="Image 2">
+                <img src="assets/images/vietmart-giam-gia-50-do-viet-nam-tai-nhat-ban.jpg" alt="Image 3">
+            </div>
+        </div>
+        <script>
+            let currentIndex = 0; // Current slide index
+    
+            function showSlide(index) {
+                const totalSlides = document.querySelectorAll('.banner-images img').length;
+                const bannerImages = document.querySelector('.banner-images');
+                
+                if (index >= totalSlides) {
+                    currentIndex = 0; // Loop back to the first image
+                } else if (index < 0) {
+                    currentIndex = totalSlides - 1; // Loop to the last image
+                } else {
+                    currentIndex = index;
+                }
+    
+                // Calculate the translateX value for sliding
+                const offset = -currentIndex * 100; 
+                bannerImages.style.transform = `translateX(${offset}vw)`;
+            }
+    
+            // Automatically slide to the next image every 3 seconds
+            setInterval(() => {
+                showSlide(currentIndex + 1);
+            }, 3000); // 3000ms = 3 seconds
+        </script>
+</body>
+</html>

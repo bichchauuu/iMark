@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Hình Ảnh</h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i> Người dùng</a></li>
+                <li class="active"><a href="#"><i class="fas fa-box"></i> Sản phẩm</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Đơn hàng</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Quản lý sản phẩm</h1>
+            </header>
+            <section class="product-section">
+                <div class="add-product">
+                    <div class="add-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <p>Thêm sản phẩm</p>
+                </div>
+            </section>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Thông Tin Sản Phẩm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Tạo sản phẩm</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <form class="modal-form">
+                <label for="name">* Tên Sản Phẩm:</label>
+                <input type="text" id="name" placeholder="Nhập Tên Sản Phẩm" required>
+                <label for="type">* Loại Sản Phẩm:</label>
+                <select id="type" required>
+                    <option value="">Loại Sản Phẩm</option>
+                    <option value="vegetable">Rau Củ Quả</option>
+                    <option value="meat">Thực Phẩm Tươi Sống</option>
+                </select>
+                <label for="price">* Giá Sản Phẩm:</label>
+                <input type="number" id="price" placeholder="Giá Sản Phẩm" required>
+                <label for="description">Thông Tin Sản Phẩm:</label>
+                <textarea id="description" placeholder="Thông Tin Sản Phẩm"></textarea>
+                <label for="image">* Hình Ảnh:</label>
+                <input type="file" id="image" required>
+                <button type="submit" class="submit-btn">Hoàn Tất</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/product.js"></script>
+</body>
+</html>

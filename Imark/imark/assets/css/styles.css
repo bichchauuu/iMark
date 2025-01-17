@@ -1,0 +1,160 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header Styles */
+.header {
+    font-family: Arial, sans-serif;
+    background-color: #e63946;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+.search-bar {
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50%;
+    margin-left: -40px;
+    cursor: pointer;
+    color: #e63946;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delivery span {
+    font-size: 20px;
+}
+
+.delivery p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.cart, .member {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar {
+    background-color: #d90429;
+    padding: 10px 0;
+}
+
+.navbar .menu-toggle {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: none; /* Hidden by default */
+    width: 250px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f8f9fa;
+}
+
+.menu-toggle:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
